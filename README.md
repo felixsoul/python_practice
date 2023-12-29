@@ -1,2 +1,2 @@
 # python_practice
-Hello, this my first submit!s
+Hello, this my first submit!
