@@ -19,11 +19,6 @@ browser.find_element_by_xpath('//*[@id="se-setting-7"]/a[2]').click()
 sleep(2)
 alert = browser.switch_to.alert
 alert_text = alert.text
-print(alert_text)
-
-browser.find_element_by_xpath('//*[@id="wrapper"]/div[5]/div/div/ul/li[2]').click()
-
-
-                              
+print(alert_text)                   
 alert.accept()
 browser.quit()
