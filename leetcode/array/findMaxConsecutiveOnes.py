@@ -3,13 +3,14 @@ def findMaxConsecutiveOnes(nums):
     old_numbers = 0
 
     for i in range(len(nums)):
-        print(i)
         if nums[i] == 1:
             numbers = numbers + 1
         else:
             if numbers > old_numbers:
                 old_numbers = numbers
                 numbers = 0
+    if numbers > old_numbers:
+        old_numbers = numbers
     return old_numbers
 
 
