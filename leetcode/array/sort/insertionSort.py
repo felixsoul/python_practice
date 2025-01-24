@@ -14,6 +14,6 @@ class Solution:
         return nums
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test = Solution()
-    print(test.insertionSort([5, 6, 8, 1, 2, 3, 4]))
+    print(test.insertionSort([5, 5, 7, 8, 8, 9, 10, 6, 3, 2, 1]))
