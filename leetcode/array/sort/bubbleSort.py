@@ -8,12 +8,12 @@ class Solution:
         :rtype: List[int]
         """
         for i in range(len(nums)-1):
-            flag = False
+            flag = True
             for j in range(len(nums)-i-1):
                 if nums[j] > nums[j+1]:
-                    nums[j], nums[j+1] = nums[j+1], nums[j]
-                    flag = True
-            if not flag:
+                    nums[j+1], nums[j] = nums[j], nums[j+1]
+                    flag = False
+            if flag:
                 break
         return nums
 
