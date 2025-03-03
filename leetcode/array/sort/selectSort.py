@@ -7,12 +7,13 @@ class Solution:
         :type nums: List[int]
         :rtype: List[int]
         """
-        for i in range(len(nums)-1):
+        for i in range(len(nums)):
             mix_index = i
             for j in range(i+1, len(nums)):
                 if nums[j] < nums[mix_index]:
                     mix_index = j
-            nums[i], nums[mix_index] = nums[mix_index], nums[i]
+            if mix_index != i:
+                nums[i], nums[mix_index] = nums[mix_index], nums[i]
         return nums
 
 
